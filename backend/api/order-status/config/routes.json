@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-statuses",
+      "handler": "order-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-statuses/count",
+      "handler": "order-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-statuses/:id",
+      "handler": "order-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-statuses",
+      "handler": "order-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-statuses/:id",
+      "handler": "order-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-statuses/:id",
+      "handler": "order-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

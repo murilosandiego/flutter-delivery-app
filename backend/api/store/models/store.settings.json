@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "name": "store"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "deliveryFee": {
+      "type": "decimal"
+    },
+    "users": {
+      "via": "store",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "products": {
+      "via": "store",
+      "collection": "product"
+    },
+    "category": {
+      "via": "stores",
+      "model": "category"
+    },
+    "orders": {
+      "via": "store",
+      "collection": "order"
+    }
+  }
+}

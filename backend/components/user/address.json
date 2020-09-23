@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_user_addresses",
+  "info": {
+    "name": "Address",
+    "icon": "search-location"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "place": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "district": {
+      "type": "string",
+      "required": true
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "default": {
+      "type": "boolean",
+      "default": false
+    },
+    "zip_code": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "complement": {
+      "type": "string"
+    }
+  }
+}

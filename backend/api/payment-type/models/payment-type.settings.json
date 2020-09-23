@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_types",
+  "info": {
+    "name": "Payment Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "receive": {
+      "type": "enumeration",
+      "enum": [
+        "App",
+        "Store"
+      ],
+      "required": true,
+      "default": "App"
+    },
+    "orders": {
+      "via": "payment_type",
+      "collection": "order"
+    }
+  }
+}

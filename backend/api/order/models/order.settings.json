@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "store": {
+      "model": "store",
+      "via": "orders"
+    },
+    "payment_type": {
+      "model": "payment-type",
+      "via": "orders"
+    },
+    "total": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "user": {
+      "via": "orders",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "order_items": {
+      "collection": "order-item"
+    },
+    "deliveryFee": {
+      "type": "decimal"
+    },
+    "subtotal": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "order_status": {
+      "model": "order-status",
+      "via": "orders"
+    },
+    "delivery": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user.address"
+    }
+  }
+}

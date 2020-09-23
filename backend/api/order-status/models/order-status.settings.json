@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_statuses",
+  "info": {
+    "name": "Order Status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "sequence": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
+    },
+    "orders": {
+      "via": "order_status",
+      "collection": "order"
+    }
+  }
+}

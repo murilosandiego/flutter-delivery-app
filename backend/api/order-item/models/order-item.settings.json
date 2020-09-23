@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "name": "Order Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product",
+      "via": "order_items"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "comments": {
+      "type": "text"
+    },
+    "price_unit": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "product_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
