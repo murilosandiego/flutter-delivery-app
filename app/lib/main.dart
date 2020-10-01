@@ -11,6 +11,7 @@ import 'core/routes/bindings/initial_binding.dart';
 void main() async {
   await GetStorage.init();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.white,
     statusBarBrightness: Brightness.light,
     statusBarIconBrightness: Brightness.dark,
   ));
