@@ -5,7 +5,7 @@
 | ![01](./app_demo.gif) |
 |                       |
 
-Um aplicativo de delivery (quase pronto) feito em flutter com GetX, GraphQL, GetStorage, Dio etc. Utilizando Strapi como Backend
+Um aplicativo de delivery feito em flutter com GetX, GraphQL, GetStorage, Dio etc. Utilizando Strapi como Backend
 
 ## Instalação do Backend
 
