@@ -5,13 +5,15 @@
 | ![01](./app_demo.gif) |
 |                       |
 
-Um aplicativo de delivery feito em flutter com GetX, GraphQL, GetStorage, Dio etc. Utilizando Strapi como Backend
+Um aplicativo de delivery feito em Flutter com GetX, GraphQL, GetStorage, Dio etc
 
 ## Instalação do Backend
 
-### Requisitos
+O backend deste projeto foi feito com [Strapi](https://stapi.io). 
 
-Este projeto usa [PostgreSQL] (https://www.postgresql.org/), portanto, para fazê-lo funcionar, instale em sua máquina local ou use Docker.
+### Requisitos
+ * Node.js
+ * Postgres
 
 A configuração do banco de dados pode ser encontrada em [config/database.js](backend/config/database.js)
 
@@ -20,16 +22,16 @@ A configuração do banco de dados pode ser encontrada em [config/database.js](b
 Após clonar este projeto, entre dentro da pasta backend e instale as dependências:
 
 ```
-yarn install
+npm ou yarn install
 ```
 
-And run using:
+E inicie o servidor:
 
 ```
-yarn develop
+yarn develop ou npm run develop
 ```
 
-Os urls para acessar são:
+As urls de acesso são:
 
 - `http://localhost:1337/admin` - O painel para criar e preencher dados
 - `http://localhost:1337/graphql` - GraphQL Playground para testar suas consultas GraphQL
@@ -39,4 +41,4 @@ Na primeira vez para acessar o Admin, você precisará criar um usuário.
 
 ### Dump do Dados
 
-Este projeto usa `Postgres` e se você quiser todos os dados previamente, descompacte o [database.sql.zip](database.sql.zip) e restaure os dados do arquivox dentro do zip.
+Este projeto usa `Postgres` e se você quiser todos os dados previamente, descompacte o [database.sql.zip](database.sql.zip) e restaure os dados do arquivo dentro do zip.
