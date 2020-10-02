@@ -9,7 +9,7 @@ Um aplicativo de delivery feito em Flutter com GetX, GraphQL, GetStorage, Dio et
 
 ## Instalação do Backend
 
-O backend deste projeto foi feito com [Strapi](https://stapi.io). 
+O backend deste projeto foi feito com [Strapi](https://strapi.io). 
 
 ### Requisitos
  * Node.js
