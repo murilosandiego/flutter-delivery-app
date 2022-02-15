@@ -1,11 +1,11 @@
-# Delivery APP GetX
+# Delivery APP
 
 |                       |
 | :-------------------- |
 | ![01](./app_demo.gif) |
 |                       |
 
-Um aplicativo de delivery feito em Flutter com GetX, GraphQL, GetStorage, Dio etc
+Um aplicativo de delivery feito em Flutter GraphQL, GetStorage, Dio etc
 
 ## Instalação do Backend
 
