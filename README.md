@@ -5,7 +5,7 @@
 | ![01](./app_demo.gif) |
 |                       |
 
-Um aplicativo de delivery feito em Flutter GraphQL, GetStorage, Dio etc
+Um aplicativo de delivery feito em Flutter GraphQL, Dio etc
 
 ## Instalação do Backend
 
